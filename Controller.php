@@ -36,7 +36,7 @@ foreach ((object)$array->Valute as $item) {
 }
 //print_r($sql);
 if ($conn->multi_query($sql) === TRUE) {
-    echo "Event has been created.";
+   return true;
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
